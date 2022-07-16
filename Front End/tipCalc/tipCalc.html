@@ -1,0 +1,41 @@
+<!-- Site Not Responsive -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="tipCalc.css">
+</head>
+<body>
+    <div class="calc">
+        <h3 id="banner">Tip Calculator</h3>
+<br>
+    How Much Was Your Bill?
+<br>
+        <span>&#36</span> <input type="text" id="bill">
+<br>
+    How Was The service?
+<br>
+        <select name="" id="service" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+            <option>Select Tip</option>
+            <option value="30">30% - Great!</option>
+            <option value="20">20% - Decent</option>
+            <option value="15">15% - Not Bad</option>
+            <option value="10">10% - Not Good</option>
+            <option value="5">5% - Disappointing</option>
+        </select>
+<br>
+    How Many People Are Sharing The Bill?
+<br>
+        <input type="text" id="billshare">   People
+<br>
+        <button type="button" id="calculate" onclick="myFunc()">Calculate</button>
+<br>
+    <strong>Tip Amount</strong> <br>
+        <sup>$</sup> <span id="tip" style="font-size: 3rem;"></span> <br>
+    Each
+    </div>
+    <script src="tipCalc.js"></script>
+</body>
+</html>

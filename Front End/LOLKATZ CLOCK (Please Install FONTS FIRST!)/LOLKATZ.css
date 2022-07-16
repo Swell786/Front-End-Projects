@@ -1,0 +1,55 @@
+* {
+  margin-top: -1rem;
+}
+body {
+  margin: 0;
+  font-family: "Bungee Shade", cursive; /* NOTE: Please install fonts provided with Folder*/
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  color: rgb(161, 37, 37);
+  background: rgba(255, 20, 67, 0.562);
+  text-align: center;
+}
+
+.banner {
+  font-size: 5rem;
+  color: rgba(110, 23, 23, 0.719);
+}
+
+.timediv {
+  font-size: 3rem;
+  margin-top: -3rem;
+}
+.timeselect {
+  margin-top: -5rem;
+}
+#time {
+  margin-top: -3rem;
+}
+
+.imgs {
+  font-size: 5rem;
+}
+
+.p {
+  margin-top: -10rem;
+  color: rgba(139, 0, 0, 0.63);
+}
+
+select {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+button {
+  padding-left: 15rem;
+  padding-right: 15rem;
+  border: 8px rgba(250, 217, 127, 0.411) dashed;
+  border-radius: 1em;
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-family: "Bungee Inline", cursive;
+  letter-spacing: 0.5em;
+  color: rgb(148, 55, 39);
+  background-color: rgba(250, 86, 86, 0.884);
+}

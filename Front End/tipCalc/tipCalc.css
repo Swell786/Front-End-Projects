@@ -1,0 +1,42 @@
+/* Site Not Responsive */
+
+/* h3 {
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+} */
+
+body {
+    background: linear-gradient(to right, black,brown);
+    font-size: 2rem;
+    text-align: center;
+}
+
+.calc {
+    margin: 7% 35%;
+    width: 35%;
+    background-color: floralwhite;
+    border-radius: 1.5em;
+}
+
+
+select,input,button {
+    width: 100%;
+    margin: 5% 0%;
+    padding: 1rem 6rem;
+    font-size: 2rem;
+    border-radius: 0.5em;
+}
+
+#banner {
+    background: rgb(88, 7, 7);
+    color: rgb(231, 203, 166);
+}
+
+button {
+    font-size: 2rem;
+    font-weight: 600;
+    color: whitesmoke;
+    background: rgb(119, 4, 4);
+    border-radius: 0.4em;
+}
+
