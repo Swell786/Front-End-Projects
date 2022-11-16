@@ -2,7 +2,10 @@
 web safe font
 Change font size and div size for mobile layout first then desktop
 add flexbox
-change wording colours ie lol to be different from katz */
+change wording colours ie lol to be different from katz
+add letter spacing 
+change background to gradient
+add select border and family*/
 
 html,body,.container{
   height: 100%;
@@ -29,14 +32,21 @@ body {
 }
 
 .timediv {
+  padding: 0;
   height: 20%;
   font-size: 1.5rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75%;
+  position: relative;
+  z-index: 1;
 }
 
 .imgs{
-  height: 75%;
+  margin: auto;
+  height: 70%;
+  width: 70%;
   font-size: 2.5rem;
+  position: static;
+  margin-bottom: 4%;
   /* height: 100%; */
 }
 
@@ -44,6 +54,7 @@ img {
   width: 75%;
   height: 100%;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .p {
@@ -56,9 +67,14 @@ img {
   bottom: 7rem;
 }
 
+.timeselect {
+  width: 100%;
+}
 select {
-  margin-top: 1rem;
+  margin: 1% 0;
   font-size: 1.5rem;
+  border-radius: 1rem ;
+  padding: 1%;
 }
 
 button {
@@ -66,10 +82,90 @@ button {
   border-radius: 1em;
   margin-top: 1rem;
   font-size: 1rem;
-  font-family: "Bungee Inline", cursive;
+  font-family: cursive;
   letter-spacing: 0.5em;
   color: rgb(148, 55, 39);
   text-align: center;
   background-color: rgba(250, 86, 86, 0.884);
   width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+  html,
+    body,
+    .container {
+      height: 100%;
+    }
+  
+    body {
+      margin: 0;
+      font-family: cursive;
+      font-size: 0.5rem;
+      letter-spacing: 0.06rem;
+      color: rgba(233, 89, 89, 0.809);
+      background: rgba(169, 91, 107, 0.562);
+      text-align: center;
+    }
+  
+    .container {
+      width: 60%;
+      margin: auto;
+    }
+  
+    .banner {
+      height: 7.5%;
+      font-size: 1.5rem;
+      color: rgba(110, 23, 23, 0.719);
+    }
+  
+    .timediv {
+      height: 7.5%;
+      font-size: 0.95rem;
+      margin-bottom: 0.5%;
+      position: relative;
+      z-index: 1;
+    }
+  
+    .imgs {
+      margin: auto;
+      height: 30%;
+      font-size: 0.75rem;
+      width: 50%;
+      position: static;
+      margin-bottom: 4%;
+    }
+  
+    img {
+      width: 75%;
+      height: 100%;
+      background-size: cover;
+    }
+  
+    .p {
+      color: rgba(139, 0, 0, 0.63);
+      padding-bottom: 0;
+      margin-bottom: 0;
+      height: 0;
+      position: relative;
+      bottom: 3rem;
+    }
+    /* .timeselect {
+      height: 100%;
+    } */
+    select {
+      margin-top: 5%;
+      font-size: 0.75rem;
+    }
+  
+    button {
+      border: 0.35rem rgba(250, 217, 127, 0.411) dashed;
+      border-radius: 0.75em;
+      font-size: 0.45rem;
+      font-family: cursive;
+      letter-spacing: 0.5em;
+      color: rgb(148, 55, 39);
+      text-align: center;
+      background-color: rgba(250, 86, 86, 0.884);
+      width: 100%;
+    }
 }
