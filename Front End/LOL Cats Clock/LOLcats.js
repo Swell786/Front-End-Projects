@@ -102,7 +102,6 @@ setInterval(clock, 1000)
 // Image change
 
 function img(){
-    document.getElementsByClassName("p")[0].style.color = "rgb(161, 37, 37)"
     
     imgDate = new Date()
 

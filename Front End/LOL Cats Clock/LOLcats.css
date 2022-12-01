@@ -4,8 +4,7 @@ change font or add more formatting
 chck in mobile view again, fonts are different
 add letter spacing 
 change background to gradient
-add select border and family
-change folder name from LOLKATZ*/
+add select border and family*/
 
 html,body{
   height: 100%;
@@ -18,7 +17,7 @@ body {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 1rem;
   letter-spacing: 0.1rem;
-  color: rgba(233, 89, 89, 0.809);
+  color: rgb(195, 50, 88);
   text-align: center;
   background-image: linear-gradient( rgb(237, 66, 100),rgb(255, 237, 188));
   background-color: rgba(237, 66, 100, 0.855);
@@ -66,12 +65,12 @@ img {
 
 .p {
   /* margin-top: -10rem; */
-  color: rgba(139, 0, 0, 0.63);
+  color: rgb(110, 16, 76);
   padding-bottom: 0;
   margin-bottom: 0;
   height: 0;
   position: relative;
-  bottom: 7rem;
+  bottom: 5.5rem;
 }
 
 .timeselect {
@@ -86,13 +85,15 @@ select {
 
 button {
   border: 0.5rem rgba(250, 217, 127, 0.411) dashed;
+  font-style: oblique;
+  font-weight: 600;
+  font-size: 1.5rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: rgb(249, 189, 152);
+  letter-spacing: 0.5em;
+  text-align: center;
   border-radius: 1em;
   margin-top: 1rem;
-  font-size: 1rem;
-  font-family: cursive;
-  letter-spacing: 0.5em;
-  color: rgb(148, 55, 39);
-  text-align: center;
   background-color: rgba(250, 86, 86, 0.884);
   width: 100%;
 }
@@ -105,7 +106,7 @@ button {
   
     body {
       margin: 0;
-      font-family: cursive;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       font-size: 0.5rem;
       letter-spacing: 0.06rem;
       color: rgba(233, 89, 89, 0.809);
@@ -131,7 +132,7 @@ button {
     .timediv {
       height: 7.5%;
       font-size: 0.95rem;
-      margin-bottom: 0.5%;
+      margin-bottom: 3%;
       position: relative;
       z-index: 1;
     }
@@ -170,10 +171,11 @@ button {
     button {
       border: 0.35rem rgba(250, 217, 127, 0.411) dashed;
       border-radius: 0.75em;
+      font-style: oblique;
+      font-weight: 600;
       font-size: 0.45rem;
-      font-family: cursive;
       letter-spacing: 0.5em;
-      color: rgb(148, 55, 39);
+      color: rgb(249, 189, 152);
       text-align: center;
       background-color: rgba(250, 86, 86, 0.884);
       width: 100%;
