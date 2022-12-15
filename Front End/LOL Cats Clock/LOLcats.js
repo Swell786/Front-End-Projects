@@ -3,18 +3,18 @@
 // make body Animation
 
 bodyColours = [
-  "(rgb(215, 108, 129),rgb(251, 232, 181),rgb(215, 108, 129) 30%)",
-  "(rgb(251, 232, 181),rgb(215, 108, 129),rgb(251, 232, 181) 30%)",
+  "(rgb(249, 152, 141),rgb(230, 215, 169),rgb(249, 152, 141) 30%)",
+  "(rgb(230, 215, 169),rgb(249, 152, 141),rgb(230, 215, 169) 30%)",
 ];
 i = 0;
-function fx() {
+function changeBodyColour() {
   document.getElementById("container").style.backgroundImage =
     "repeating-linear-gradient" + bodyColours[i];
   if (i >= 1) i = 0;
   else i++;
 }
 
-setInterval(() => {fx();
+setInterval(() => {changeBodyColour();
 }, 1000);
 
 

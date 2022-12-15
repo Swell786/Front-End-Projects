@@ -1,7 +1,6 @@
 /* Changes
 change wording colours ie lol to be different from katz
-change font or add more formatting
-chck in mobile view again, fonts are different
+change font or add more formatting -- change margins to accomodate larger font on desktop 
 add letter spacing 
 change background to gradient
 add select border and family*/
@@ -10,12 +9,10 @@ html,body{
   height: 100%;
 }
 
-/* make body background change color gradually */
-
 body {
   margin: 0;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 1rem;
+  font-size: 1.5rem;
   letter-spacing: 0.1rem;
   color: rgb(195, 50, 88);
   text-align: center;
@@ -26,45 +23,47 @@ body {
 }
 
 #container {
+  height: 185%;
   width: 60%;
   margin: auto;
   background-color: rgb(237, 66, 100);
+  border-radius: 0 0 5% 5%;
 }
 
 .banner {
-  height: 10%;
-  font-size: 2.5rem;
+  height: 8%;
+  font-size: 3.5rem;
   color: rgba(110, 23, 23, 0.719);
 }
 
 .timediv {
   padding: 0;
-  height: 20%;
-  font-size: 1.5rem;
+  height: 10%;
+  font-size: 2.5rem;
   margin-bottom: 0.75%;
   position: relative;
   z-index: 1;
 }
 
+#time{
+  margin: 2.5%;
+}
+
 .imgs{
   margin: auto;
-  height: 70%;
+  margin-bottom: 0%;
   width: 70%;
   font-size: 2.5rem;
   position: static;
-  margin-bottom: 4%;
-  /* height: 100%; */
 }
 
 img {
   width: 75%;
-  height: 100%;
   background-size: cover;
   background-attachment: fixed;
 }
 
 .p {
-  /* margin-top: -10rem; */
   color: rgb(110, 16, 76);
   padding-bottom: 0;
   margin-bottom: 0;
@@ -93,23 +92,23 @@ button {
   letter-spacing: 0.5em;
   text-align: center;
   border-radius: 1em;
-  margin-top: 1rem;
+  margin-top: 1.5%;
   background-color: rgba(250, 86, 86, 0.884);
-  width: 100%;
+  width: 90%;
 }
 
 @media screen and (max-width: 500px) {
   html,
-    body {
+    body{
       height: 100%;
     }
   
     body {
-      margin: 0;
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       font-size: 0.5rem;
       letter-spacing: 0.06rem;
-      color: rgba(233, 89, 89, 0.809);
+      color: rgb(195, 50, 88);
       text-align: center;
       background-image: linear-gradient(rgb(237, 66, 100), rgb(255, 237, 188));
       background-color: rgba(237, 66, 100, 0.855);
@@ -118,19 +117,20 @@ button {
     }
   
     #container {
-      height: 65%;
+      height: 100%;
       width: 60%;
+      background-color: rgb(237, 66, 100);
       margin: auto;
     }
   
     .banner {
-      height: 7.5%;
+      height: 9.5%;
       font-size: 1.5rem;
       color: rgba(110, 23, 23, 0.719);
     }
   
     .timediv {
-      height: 7.5%;
+      height: 12.5%;
       font-size: 0.95rem;
       margin-bottom: 3%;
       position: relative;
@@ -139,7 +139,7 @@ button {
   
     .imgs {
       margin: auto;
-      height: 30%;
+      height: 40%;
       font-size: 0.75rem;
       width: 50%;
       position: static;
@@ -160,12 +160,19 @@ button {
       position: relative;
       bottom: 3rem;
     }
-    /* .timeselect {
-      height: 100%;
-    } */
+
+    .words {
+      margin-top: 12%;
+    }
+
+    .timeselect {
+      margin-top: 5.5%;
+      margin-bottom: 3%;
+    }
+
     select {
-      margin-top: 5%;
-      font-size: 0.75rem;
+      margin-top: 2%;
+      font-size: 0.35rem;
     }
   
     button {
@@ -180,4 +187,97 @@ button {
       background-color: rgba(250, 86, 86, 0.884);
       width: 100%;
     }
+
+}
+@media screen and (max-width: 850px) and (min-width: 501px) {
+  html,
+    body{
+      height: 100%;
+    }
+  
+    body {
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 1.05rem;
+      letter-spacing: 0.1rem;
+      color: rgb(195, 50, 88);
+      text-align: center;
+      background-image: linear-gradient(rgb(237, 66, 100), rgb(255, 237, 188));
+      background-color: rgba(237, 66, 100, 0.855);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+  
+    #container {
+      height: 130%;
+      width: 60%;
+      background-color: rgb(237, 66, 100);
+      margin: auto;
+    }
+  
+    .banner {
+      height: 9.5%;
+      font-size: 1.4rem;
+      color: rgba(110, 23, 23, 0.719);
+    }
+  
+    .timediv {
+      height: 12.5%;
+      font-size: 1.45rem;
+      margin-bottom: 3%;
+      position: relative;
+      z-index: 1;
+    }
+  
+    .imgs {
+      margin: auto;
+      height: 40%;
+      font-size: 1.15rem;
+      width: 50%;
+      position: static;
+      margin-bottom: 4%;
+    }
+  
+    img {
+      width: 75%;
+      height: 100%;
+      background-size: cover;
+    }
+  
+    .p {
+      color: rgb(110, 16, 76);
+      padding-bottom: 0;
+      margin-bottom: 0;
+      height: 0;
+      position: relative;
+      bottom: 3rem;
+    }
+
+    .words {
+      margin-top: 3%;
+    }
+
+    .timeselect {
+      margin-top: 4.5%;
+      margin-bottom: 3%;
+    }
+
+    select {
+      margin-top: 2%;
+      font-size: .85rem;
+    }
+  
+    button {
+      border: 0.35rem rgba(250, 217, 127, 0.411) dashed;
+      border-radius: 0.75em;
+      font-style: oblique;
+      font-weight: 600;
+      font-size: 0.85rem;
+      letter-spacing: 0.5em;
+      color: rgb(249, 189, 152);
+      text-align: center;
+      background-color: rgba(250, 86, 86, 0.884);
+      width: 90%;
+    }
+
 }
