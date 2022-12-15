@@ -117,7 +117,7 @@ button {
     }
   
     #container {
-      height: 100%;
+      height: 60%;
       width: 60%;
       background-color: rgb(237, 66, 100);
       margin: auto;
@@ -198,7 +198,7 @@ button {
     body {
     margin: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-      font-size: 1.05rem;
+      font-size: 1.25rem;
       letter-spacing: 0.1rem;
       color: rgb(195, 50, 88);
       text-align: center;
@@ -216,14 +216,14 @@ button {
     }
   
     .banner {
-      height: 9.5%;
-      font-size: 1.4rem;
+      height: 7.5%;
+      font-size: 1.6rem;
       color: rgba(110, 23, 23, 0.719);
     }
   
     .timediv {
-      height: 12.5%;
-      font-size: 1.45rem;
+      height: 10.5%;
+      font-size: 1.65rem;
       margin-bottom: 3%;
       position: relative;
       z-index: 1;
@@ -232,7 +232,7 @@ button {
     .imgs {
       margin: auto;
       height: 40%;
-      font-size: 1.15rem;
+      font-size: 1.35rem;
       width: 50%;
       position: static;
       margin-bottom: 4%;
@@ -254,7 +254,7 @@ button {
     }
 
     .words {
-      margin-top: 3%;
+      margin-top: 7%;
     }
 
     .timeselect {
@@ -272,7 +272,7 @@ button {
       border-radius: 0.75em;
       font-style: oblique;
       font-weight: 600;
-      font-size: 0.85rem;
+      font-size: 1.05rem;
       letter-spacing: 0.5em;
       color: rgb(249, 189, 152);
       text-align: center;
