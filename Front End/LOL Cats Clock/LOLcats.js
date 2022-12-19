@@ -1,17 +1,15 @@
 // change set interval to fall under one fx
 
+// repeat this shit again
+
 // make body Animation
 
-bodyColours = [
-    "(rgb(249, 152, 141),rgb(230, 215, 169),rgb(249, 152, 141) 30%)",
-    "(rgb(230, 215, 169),rgb(249, 152, 141),rgb(230, 215, 169) 30%)",
-];
-i = 0;
-function changeBodyColour() {
-    document.getElementById("container").style.backgroundImage =
-    "repeating-linear-gradient" + bodyColours[i];
-    if (i >= 1) i = 0;
-    else i++;
+var bodyColour = ['rgb(154,77,98)','rgb(154,27,198)']
+
+function changeBodyColour () {
+    for (i = 0 ; i < 3 ; i++) {
+    document.getElementsByTagName('body').style.color = bodyColour[i]
+}
 }
 
 
