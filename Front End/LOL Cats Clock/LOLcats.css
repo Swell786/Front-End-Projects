@@ -1,9 +1,5 @@
 /* Changes
-change wording colours ie lol to be different from katz
-change font or add more formatting -- change margins to accomodate larger font on desktop 
-add letter spacing 
-change background to gradient
-add select border and family*/
+change wording colours ie lol to be different from katz*/
 
 html,body{
   height: 100%;
@@ -16,7 +12,10 @@ body {
   letter-spacing: 0.1rem;
   color: rgb(195, 50, 88);
   text-align: center;
-  background-image: linear-gradient( rgb(237, 66, 100),rgb(255, 237, 188));
+  background-image: linear-gradient(   rgb(237, 66, 100) ,rgb(255, 237, 188) 70%);
+  background-image: -moz-linear-gradient(  rgb(237, 66, 100) ,rgb(255, 237, 188) 70%);
+  background-image: -webkit-linear-gradient(  rgb(237, 66, 100) ,rgb(255, 237, 188) 70%);
+  background-image: -o-linear-gradient(  rgb(237, 66, 100) ,rgb(255, 237, 188) 70%);
   background-color: rgba(237, 66, 100, 0.855);
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -33,7 +32,8 @@ body {
 .banner {
   height: 8%;
   font-size: 3.5rem;
-  color: rgba(110, 23, 23, 0.719);
+  color: rgb(223, 36, 86);
+  background-color: peachpuff;
 }
 
 .timediv {
@@ -105,25 +105,28 @@ button {
 
 @media screen and (max-width: 500px) {
   html,
-    body{
-      height: 100%;
-    }
+  body{
+    height: 100%;
+  }
   
     body {
-    margin: 0;
+      margin: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       font-size: 0.5rem;
       letter-spacing: 0.06rem;
       color: rgb(195, 50, 88);
       text-align: center;
-      background-image: linear-gradient(rgb(237, 66, 100), rgb(255, 237, 188));
+      background-image: linear-gradient(   rgb(237, 66, 100) ,rgb(255, 237, 188) 70%);
+      background-image: -moz-linear-gradient(  rgb(237, 66, 100) ,rgb(255, 237, 188) 70%);
+      background-image: -webkit-linear-gradient(  rgb(237, 66, 100) ,rgb(255, 237, 188) 70%);
+      background-image: -o-linear-gradient(  rgb(237, 66, 100) ,rgb(255, 237, 188) 70%); 
       background-color: rgba(237, 66, 100, 0.855);
       background-repeat: no-repeat;
       background-attachment: fixed;
     }
-  
+    
     #container {
-      height: 60%;
+      height: 60.5%;
       width: 60%;
       background-color: rgb(237, 66, 100);
       margin: auto;
@@ -131,7 +134,7 @@ button {
   
     .banner {
       height: 9.5%;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       color: rgba(110, 23, 23, 0.719);
     }
   
@@ -166,7 +169,7 @@ button {
       position: relative;
       bottom: 3rem;
     }
-
+    
     .words {
       margin-top: 12%;
     }
@@ -195,12 +198,12 @@ button {
     }
 
 }
-@media screen and (max-width: 850px) and (min-width: 501px) {
+@media screen and (max-width: 950px) and (min-width: 500px) {
   html,
     body{
       height: 100%;
     }
-  
+    
     body {
     margin: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -208,14 +211,18 @@ button {
       letter-spacing: 0.1rem;
       color: rgb(195, 50, 88);
       text-align: center;
-      background-image: linear-gradient(rgb(237, 66, 100), rgb(255, 237, 188));
+      background-image: linear-gradient(   rgb(237, 66, 100) ,rgb(255, 237, 188) 70%);
+      background-image: -moz-linear-gradient(  rgb(237, 66, 100) ,rgb(255, 237, 188) 70%);
+      background-image: -webkit-linear-gradient(  rgb(237, 66, 100) ,rgb(255, 237, 188) 70%);
+      background-image: -o-linear-gradient(  rgb(237, 66, 100) ,rgb(255, 237, 188) 70%);
+      background-color: rgba(237, 66, 100, 0.855);
       background-color: rgba(237, 66, 100, 0.855);
       background-repeat: no-repeat;
       background-attachment: fixed;
     }
-  
+    
     #container {
-      height: 130%;
+      height: 150%;
       width: 60%;
       background-color: rgb(237, 66, 100);
       margin: auto;

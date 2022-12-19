@@ -3,62 +3,66 @@
 // make body Animation
 
 bodyColours = [
-  "(rgb(249, 152, 141),rgb(230, 215, 169),rgb(249, 152, 141) 30%)",
-  "(rgb(230, 215, 169),rgb(249, 152, 141),rgb(230, 215, 169) 30%)",
+    "(rgb(249, 152, 141),rgb(230, 215, 169),rgb(249, 152, 141) 30%)",
+    "(rgb(230, 215, 169),rgb(249, 152, 141),rgb(230, 215, 169) 30%)",
 ];
 i = 0;
 function changeBodyColour() {
-  document.getElementById("container").style.backgroundImage =
+    document.getElementById("container").style.backgroundImage =
     "repeating-linear-gradient" + bodyColours[i];
-  if (i >= 1) i = 0;
-  else i++;
+    if (i >= 1) i = 0;
+    else i++;
 }
 
-setInterval(() => {changeBodyColour();
-}, 1000);
 
 
 // make banner animated
 
-// var colourArray = [
-//   "rgb(248, 155, 165)",
-//   "rgb(248, 160, 170)",
-//   "rgb(248, 160, 180)",
-//   "rgb(248, 175, 195)",
-//   "rgb(249, 184, 195)",
-//   "rgb(248, 195, 215)",
-//   "rgb(248, 205, 235)",
-//   "rgb(248, 225, 225)",
-//   "rgb(248, 116, 138)",
-// ];
+var c = 0;
+var b = true;
+var colourArray = [
+    'rgb(179, 51, 111)',
+    'rgb(177, 76, 123)',
+    'rgb(176, 77, 94)',
+    'rgb(250, 132, 152)',
+    'rgb(250, 134, 153)',
+    'rgb(251, 128, 149)',
+    'rgb(250, 141, 159)',
+    'rgb(249, 146, 163)',
+    'rgb(247, 143, 161)',
+];
 
-// changingColorsArray = [...colourArray];
+var bannerArray = document.querySelector('.banner').children
 
-// function applyColors(children, colorArr) {
-//   for (let i = 0; i < children.length; i++) {
-//     children[i].style.color = colorArr[i];
-//   }
-// }
+changingColorsArray = [...colourArray];
+
+function applyColors(children, colorArr) {
+    for (let i = 0; i < children.length; i++) {
+        children[i].style.color = colorArr[i];
+    }
+}
 
 
-// function arrayRotate(arr, reverse) {
-//   if (reverse) arr.unshift(arr.pop());
-//   else arr.push(arr.shift());
-//   return arr;
-// }
+function arrayRotate(arr, reverse) {
+    if (reverse) arr.unshift(arr.pop());
+    else arr.push(arr.shift());
+    return arr;
+}
 
-// function reverseTimer(p) {
-//   c++;
-//   if (c % 9 === 0) x = !p;
-// }
+function reverseTimer(p) {
+    c++;
+    if (c % 7 === 0) b = !p;
+}
 
-// myInterval = setInterval(() => {
-//   reverseTimer(x);
+myInterval = setInterval(() => {
+    reverseTimer(b);
+    
+    arrayRotate(changingColorsArray, b);
+    
+    applyColors(bannerArray, changingColorsArray);
+    
+}, 100);
 
-//   arrayRotate(changingColorsArray, x);
-
-//   applyColors(value, changingColorsArray);
-// }, 1600);
 
 
 
@@ -68,18 +72,18 @@ function clock(){
     h = time.getHours()
     m = time.getMinutes()
     s = time.getSeconds()
-
+    
     function checkTime(x){
-    if(x < 10) {
-        x = "0" + x
+        if(x < 10) {
+            x = "0" + x
+        }
+        return x
     }
-    return x
-}
-
+    
     h = checkTime(h) 
     m = checkTime(m)
     s = checkTime(s)
-
+    
     if(h < 12){
         x = "AM"
     } else if (h > 12) {
@@ -87,32 +91,31 @@ function clock(){
     }
     
     h = h % 12
-
+    
     if(h === 0){
         h = 12
     }
     
     let klock = h + ":" + m + ":" + s 
-
-    document.getElementById("time").innerHTML = `${klock} ${x}` // converted to template string (refactored)
+    
+    document.getElementById("time").innerHTML = `${klock} ${x}` // converted to template string
 }
 
-setInterval(clock, 1000)
 
 // Image change
 
 function img(){
     
     imgDate = new Date()
-
+    
     ht = imgDate.getHours() 
     mt = imgDate.getMinutes()
     st = imgDate.getSeconds()
-
+    
     w = document.getElementById("wakeup").value
     l = document.getElementById("lunch").value
     s = document.getElementById("sleep").value
-
+    
     if(0 <= ht && ht < 4 && w == 1 ) {
         document.getElementById("img").src = "./Images/wakeup.jpg"
         document.getElementsByClassName("p")[0].innerHTML = "Wakey Wakey!!"
@@ -150,26 +153,33 @@ function img(){
         document.getElementById("img").src = "./Images/default.jpg"
         document.getElementsByClassName("p")[0].innerHTML = "YES?"
     } }
+    
+    setInterval(() => {
+        changeBodyColour();
+        clock();
+    }, 1000);
 
     myVar = setInterval(img, 1000) 
-
+    
     // party    
-
+    
+    var p = document.getElementById("parte").innerHTML
+    var pg = document.getElementsByClassName("p")[0]
+    
     function parte(){
-        p = document.getElementById("parte").innerHTML
         
         if(p == "Party Off!!"){
             myVar = setInterval(img, 1000)
-            document.getElementById("parte").innerHTML = "Party!"
+            pg.style.color = 'rgb(110, 16, 76)'
+            p = "Party!"
         } else {
             clearInterval(myVar)
             document.getElementById("img").src = "./Images/parte.jpg"
             
-            pg = document.getElementsByClassName("p")[0]
             pg.innerHTML = "PAAARTEEEE!!"
-            pg.style.color = "FFD8BD"
+            pg.style.color = "rgb(255, 216, 189)"
             
-            p = document.getElementById("parte").innerHTML = "Party Off!!"}
+            p = "Party Off!!"}
 
     } 
     
