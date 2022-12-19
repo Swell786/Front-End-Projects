@@ -61,7 +61,7 @@ myInterval = setInterval(() => {
     
     applyColors(bannerArray, changingColorsArray);
     
-}, 100);
+}, 105);
 
 
 
