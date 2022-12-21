@@ -1,6 +1,3 @@
-// change set interval to fall under one fx
-
-// repeat this shit again
 
 // make body Animation
 
