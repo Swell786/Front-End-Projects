@@ -1,0 +1,55 @@
+<!-- LOLKATZ Klock -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="LOLcats.css">
+</head>
+<body >
+    <div id="container">
+        <div class="banner">
+            LOL CATS CLOCK
+        </div>
+        <div class="timediv">
+            I can haz time?
+            <p id="time"></p>
+        </div>
+
+        <div class="imgs">
+            <img src="" alt="" id="img">
+            <p class="p"></p>
+        </div>
+        <div class="words">SELECT TIME SLOT THAT MATCHES CURRENT TIME</div>
+        <div class="timeselect">
+            <span style="margin-left: 0%;">SET Wake-up Time:</span>
+                <select name="" id="wakeup" style="width: 25%;">
+                <option value="1">12 - 4 AM</option>
+                <option value="2">4 - 6 AM</option>
+                <option value="3">6 - 8 AM</option>
+                <option value="4">8 - 10 AM</option>
+                <option value="5">10 - 12 AM</option>
+            </select>
+            <br>
+            <span style="margin-left: 5%;">SET lunch Time:</span> 
+                <select name="" id="lunch" style="width: 25%;">
+                <option value="6">12 - 2 PM</option>
+                <option value="7">2 - 4 PM</option>
+            </select>
+            <br>
+            <span style="margin-left: 4%;">SET Sleep Time:</span>
+                <select name="" id="sleep" style="width: 25%;">
+                <option value="8">4 - 6 PM</option>
+                <option value="9">6 - 8 PM</option>
+                <option value="10">8 - 10 PM</option>
+                <option value="11">10 - 12 PM</option>
+            </select>
+        </div>
+        
+        <button id="parte" onclick="parte()">Party!</button>
+    </div>
+
+    <script src="LOLcats.js"></script>
+</body>
+</html>

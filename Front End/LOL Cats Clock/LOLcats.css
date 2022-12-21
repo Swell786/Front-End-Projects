@@ -1,0 +1,296 @@
+/* Changes
+change wording colours ie lol to be different from katz*/
+
+html,body{
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  color: rgb(195, 50, 88);
+  text-align: center;
+  background-image: linear-gradient(   rgb(237, 66, 100) ,rgb(255, 237, 188) 70%);
+  background-image: -moz-linear-gradient(  rgb(237, 66, 100) ,rgb(255, 237, 188) 70%);
+  background-image: -webkit-linear-gradient(  rgb(237, 66, 100) ,rgb(255, 237, 188) 70%);
+  background-image: -o-linear-gradient(  rgb(237, 66, 100) ,rgb(255, 237, 188) 70%);
+  background-color: rgba(237, 66, 100, 0.855);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#container {
+  height: 165%;
+  width: 60%;
+  margin: auto;
+  background-color: rgb(237, 66, 100);
+  border-radius: 0 0 5% 5%;
+}
+
+.banner {
+  height: 8%;
+  font-size: 3.5rem;
+  color: rgb(223, 36, 86);
+  background-color: peachpuff;
+}
+
+.timediv {
+  padding: 0;
+  height: 11%;
+  font-size: 2.5rem;
+  margin-bottom: 0.75%;
+  position: relative;
+  z-index: 1;
+}
+
+#time{
+  margin: 2.5%;
+}
+
+.imgs{
+  height: 50%;
+  margin: auto;
+  /* margin-bottom: 0%; */
+  width: 70%;
+  font-size: 2.5rem;
+  position: static;
+}
+
+img {
+  height: 100%;
+  width: 75%;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.p {
+  color: rgb(110, 20, 77);
+  padding-bottom: 0;
+  margin-bottom: 0;
+  height: 0;
+  position: relative;
+  bottom: 5.5rem;
+}
+
+.words {
+  margin-top: 5%;
+}
+
+.timeselect {
+  width: 100%;
+}
+select {
+  margin: 1% 0;
+  font-size: 1.5rem;
+  border-radius: 1rem ;
+  padding: 1%;
+}
+
+button {
+  border: 0.5rem rgba(250, 217, 127, 0.411) dashed;
+  font-style: oblique;
+  font-weight: 600;
+  font-size: 1.5rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: rgb(249, 189, 152);
+  letter-spacing: 0.5em;
+  text-align: center;
+  border-radius: 1em;
+  margin-top: 1.5%;
+  background-color: rgba(250, 86, 86, 0.884);
+  width: 90%;
+}
+
+@media screen and (max-width: 500px) {
+  html,
+  body{
+    height: 100%;
+  }
+  
+    body {
+      margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 0.5rem;
+      letter-spacing: 0.06rem;
+      color: rgb(195, 50, 88);
+      text-align: center;
+      background-image: linear-gradient(   rgb(237, 66, 100) ,rgb(255, 237, 188) 70%);
+      background-image: -moz-linear-gradient(  rgb(237, 66, 100) ,rgb(255, 237, 188) 70%);
+      background-image: -webkit-linear-gradient(  rgb(237, 66, 100) ,rgb(255, 237, 188) 70%);
+      background-image: -o-linear-gradient(  rgb(237, 66, 100) ,rgb(255, 237, 188) 70%); 
+      background-color: rgba(237, 66, 100, 0.855);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+    
+    #container {
+      height: 60.5%;
+      width: 60%;
+      background-color: rgb(237, 66, 100);
+      margin: auto;
+    }
+  
+    .banner {
+      height: 9.5%;
+      font-size: 1.2rem;
+      color: rgba(110, 23, 23, 0.719);
+    }
+  
+    .timediv {
+      height: 12.5%;
+      font-size: 0.95rem;
+      margin-bottom: 3%;
+      position: relative;
+      z-index: 1;
+    }
+  
+    .imgs {
+      margin: auto;
+      height: 40%;
+      font-size: 0.75rem;
+      width: 50%;
+      position: static;
+      margin-bottom: 4%;
+    }
+  
+    img {
+      width: 75%;
+      height: 100%;
+      background-size: cover;
+    }
+  
+    .p {
+      color: rgb(110, 16, 76);
+      padding-bottom: 0;
+      margin-bottom: 0;
+      height: 0;
+      position: relative;
+      bottom: 3rem;
+    }
+    
+    .words {
+      margin-top: 12%;
+    }
+
+    .timeselect {
+      margin-top: 5.5%;
+      margin-bottom: 3%;
+    }
+
+    select {
+      margin-top: 2%;
+      font-size: 0.35rem;
+    }
+  
+    button {
+      border: 0.35rem rgba(250, 217, 127, 0.411) dashed;
+      border-radius: 0.75em;
+      font-style: oblique;
+      font-weight: 600;
+      font-size: 0.45rem;
+      letter-spacing: 0.5em;
+      color: rgb(249, 189, 152);
+      text-align: center;
+      background-color: rgba(250, 86, 86, 0.884);
+      width: 100%;
+    }
+
+}
+@media screen and (max-width: 950px) and (min-width: 500px) {
+  html,
+    body{
+      height: 100%;
+    }
+    
+    body {
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 1.25rem;
+      letter-spacing: 0.1rem;
+      color: rgb(195, 50, 88);
+      text-align: center;
+      background-image: linear-gradient(   rgb(237, 66, 100) ,rgb(255, 237, 188) 70%);
+      background-image: -moz-linear-gradient(  rgb(237, 66, 100) ,rgb(255, 237, 188) 70%);
+      background-image: -webkit-linear-gradient(  rgb(237, 66, 100) ,rgb(255, 237, 188) 70%);
+      background-image: -o-linear-gradient(  rgb(237, 66, 100) ,rgb(255, 237, 188) 70%);
+      background-color: rgba(237, 66, 100, 0.855);
+      background-color: rgba(237, 66, 100, 0.855);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+    
+    #container {
+      height: 150%;
+      width: 60%;
+      background-color: rgb(237, 66, 100);
+      margin: auto;
+    }
+  
+    .banner {
+      height: 7.5%;
+      font-size: 1.6rem;
+      color: rgba(110, 23, 23, 0.719);
+    }
+  
+    .timediv {
+      height: 10.5%;
+      font-size: 1.65rem;
+      margin-bottom: 3%;
+      position: relative;
+      z-index: 1;
+    }
+  
+    .imgs {
+      margin: auto;
+      height: 40%;
+      font-size: 1.35rem;
+      width: 50%;
+      position: static;
+      margin-bottom: 4%;
+    }
+  
+    img {
+      width: 75%;
+      height: 100%;
+      background-size: cover;
+    }
+  
+    .p {
+      color: rgb(110, 16, 76);
+      padding-bottom: 0;
+      margin-bottom: 0;
+      height: 0;
+      position: relative;
+      bottom: 3rem;
+    }
+
+    .words {
+      margin-top: 7%;
+    }
+
+    .timeselect {
+      margin-top: 4.5%;
+      margin-bottom: 3%;
+    }
+
+    select {
+      margin-top: 2%;
+      font-size: .85rem;
+    }
+  
+    button {
+      border: 0.35rem rgba(250, 217, 127, 0.411) dashed;
+      border-radius: 0.75em;
+      font-style: oblique;
+      font-weight: 600;
+      font-size: 1.05rem;
+      letter-spacing: 0.5em;
+      color: rgb(249, 189, 152);
+      text-align: center;
+      background-color: rgba(250, 86, 86, 0.884);
+      width: 90%;
+    }
+
+}
