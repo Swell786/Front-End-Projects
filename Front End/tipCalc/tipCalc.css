@@ -5,6 +5,7 @@
     border-top-right-radius: 1em;
 } */
 
+
 body {
     background: linear-gradient(to right, black,brown);
     font-size: 2rem;
@@ -18,18 +19,23 @@ body {
     border-radius: 1.5em;
 }
 
+#banner {
+    background: rgb(88, 7, 7);
+    color: rgb(231, 203, 166);
+}
+
 
 select,input,button {
-    width: 100%;
-    margin: 5% 0%;
-    padding: 1rem 6rem;
+    width: 85%;
+    margin: 5% 2.5%;
+    padding: 1rem 2rem;
     font-size: 2rem;
     border-radius: 0.5em;
 }
 
-#banner {
-    background: rgb(88, 7, 7);
-    color: rgb(231, 203, 166);
+#bill,#dollar {
+    margin-left: 0;
+    margin-right: 0.35em;
 }
 
 button {
@@ -40,3 +46,31 @@ button {
     border-radius: 0.4em;
 }
 
+@media only screen and (max-width: 500px) {
+    body {
+        font-size: 0.9rem;
+    }
+    
+    .calc {
+        border-radius: 0.9em;
+    }
+    
+    select,input,button {
+        width: 85%;
+        margin: 5% 2.5%;
+        padding: 0.5rem 0.75rem;
+        font-size: 0.75rem;
+        border-radius: 0.5em;
+    }
+    
+    #bill,#dollar {
+        margin-left: 0;
+        margin-right: 0.15em;
+    }
+    
+    button {
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    
+}
