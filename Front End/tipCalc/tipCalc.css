@@ -1,11 +1,4 @@
 /* Site Not Responsive */
-
-/* h3 {
-    border-top-left-radius: 1em;
-    border-top-right-radius: 1em;
-} */
-
-
 body {
     background: linear-gradient(to right, black,brown);
     font-size: 2rem;
@@ -23,7 +16,6 @@ body {
     background: rgb(88, 7, 7);
     color: rgb(231, 203, 166);
 }
-
 
 select,input,button {
     width: 85%;
@@ -56,15 +48,11 @@ button {
     }
     
     select,input,button {
-        width: 85%;
-        margin: 5% 2.5%;
         padding: 0.5rem 0.75rem;
         font-size: 0.75rem;
-        border-radius: 0.5em;
     }
     
     #bill,#dollar {
-        margin-left: 0;
         margin-right: 0.15em;
     }
     
