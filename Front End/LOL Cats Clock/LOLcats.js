@@ -166,7 +166,7 @@ function img(){
     function parte() {
         
         if(p.innerHTML == "Party Off!!"){
-            myVar = setInterval(img, 1000)
+            myVar = setInterval(img, 0)
             pg.style.color = 'rgb(110, 16, 76)'
             p.innerHTML = "Party!"
         } else {
