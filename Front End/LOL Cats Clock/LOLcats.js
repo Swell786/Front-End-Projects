@@ -161,25 +161,21 @@ function img(){
     myVar = setInterval(img, 1000) 
     
     // party    
-    
-    var p = document.getElementById("parte").innerHTML
     var pg = document.getElementsByClassName("p")[0]
-    
-    function parte(){
+        p = document.getElementById('parte')
+    function parte() {
         
-        if(p == "Party Off!!"){
+        if(p.innerHTML == "Party Off!!"){
             myVar = setInterval(img, 1000)
             pg.style.color = 'rgb(110, 16, 76)'
-            p = "Party!"
+            p.innerHTML = "Party!"
         } else {
             clearInterval(myVar)
             document.getElementById("img").src = "./Images/parte.jpg"
-            
             pg.innerHTML = "PAAARTEEEE!!"
             pg.style.color = "rgb(255, 216, 189)"
-            
-            p = "Party Off!!"}
+            p.innerHTML = "Party Off!!"
+        }
 
-    } 
-    
+    }
 
