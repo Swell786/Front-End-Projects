@@ -162,7 +162,7 @@ function img(){
     
     // party    
     var pg = document.getElementsByClassName("p")[0]
-        p = document.getElementById('parte')
+        p = document.getElementById('link')
     function parte() {
         
         if(p.innerHTML == "Party Off!!"){
