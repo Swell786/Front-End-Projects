@@ -1,0 +1,14 @@
+html,body {
+    height: 100%;
+}
+
+body {
+    
+}
+
+div {
+    width: 10%;
+    height: 10%;
+    background-color: coral;
+}
+
